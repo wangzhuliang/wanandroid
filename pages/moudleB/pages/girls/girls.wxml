@@ -1,0 +1,31 @@
+<!--pages/moudleB/pages/girls/girls.wxml-->
+<navBar title='妹纸图' back="{{true}}" bindback="gobackClick"></navBar>
+<scroll-view class="v_list" style="top:{{topDistance}}px;" scroll-y="true" bindscrolltolower="bindscrolltolower">
+  <view class="content">
+    <view class="left">
+      <view wx:for="{{girlsList}}" wx:key="girlsList">
+        <template is="template" wx:if="{{index%2 == 0}}" data="{{object : item}}"></template>
+      </view>
+    </view>
+    <view class="right">
+      <view wx:for="{{girlsList}}" wx:key="girlsList">
+        <template is="template" wx:if="{{index%2 == 1}}" data="{{object : item}}"></template>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+
+<!-- 使用name属性，作为模板的名字 -->
+<template name="template">
+  <!-- 显示内容 -->
+  <view class="item" bindtap="toDetails" data-details="{{object}}">
+    <image class="item-img" mode="widthFix" src="{{object.url}}"></image>
+  </view>
+  
+</template>
+
+
+<!-- 引入图片预加载组件 -->
+<import src="../../../../utils/img-loader.wxml"/>
+<template is="img-loader" data="{{ imgLoadList }}"></template>

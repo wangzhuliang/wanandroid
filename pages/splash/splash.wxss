@@ -1,0 +1,41 @@
+/* pages/splash/splash.wxss */
+
+.iv_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 100%;
+}
+
+.tv_time{
+  position: absolute;
+  text-align: center;
+  width: 100rpx;
+  right: 40rpx;
+  line-height: 50rpx;
+  background-color:rgba(237, 237, 237, .6);
+  font-size: 14px;
+  color: #EBA356;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.start {
+  position: absolute;
+  bottom: 100rpx;
+  width: 300rpx;
+  left: 225rpx;
+  background-color: rgba(237, 237, 237, .6);
+  color: #FF6B6B;
+  border-radius: 200rpx;
+  font-size: 34rpx;
+  display: block;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}

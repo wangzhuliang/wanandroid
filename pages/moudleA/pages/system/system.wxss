@@ -1,0 +1,42 @@
+/* pages/moudleA/pages/system/system.wxss */
+.v_list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.v_all {
+  margin-right: 32rpx;
+  margin-left: 32rpx;
+  margin-top: 32rpx;
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+  padding-left: 32rpx;
+  box-shadow: 2px 2px 8px #aaa;
+  border-radius: 10rpx;
+  background-color: #ffffff;
+}
+
+.v_title {
+  font-size: 34rpx;
+  color: #333333;
+}
+
+.v_item_all {
+  margin-left: 4rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.v_item {
+  margin-top: 32rpx;
+  margin-right: 32rpx;
+}
+
+.v_item_title {
+  font-size: 28rpx;
+  color: #666666;
+}

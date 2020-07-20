@@ -1,0 +1,17 @@
+<!--pages/moudleA/pages/systemItem/systemItem.wxml-->
+<navBar title="{{title}}" back="{{true}}" home="{{true}}" bindback="gobackClick" bindhome="goHome"></navBar>
+<view class="container" style="top:{{topDistance}}px;" wx:if="{{systemItemData.length != 0}}">
+  <scroll-view class="scroll-title" scroll-x="true" scroll-left="{{titleScrollLeft}}" scroll-with-animation="{{true}}" id="scrollView">
+    <view class="title-item" wx:for="{{systemItemData}}" wx:key="systemItem" style="margin-right: {{ index == systemItemData.length-1? 30 : 15 }}rpx;color:{{current == index? '#EBA356':'#666666'}};" id="item{{index}}" data-current="{{index}}" bindtap="switchTitle">{{item.name}}</view>
+  </scroll-view>
+  <scroll-view class="sv_list" scroll-y="true" scroll-top="{{top}}" bindscrolltolower="bindscrolltolower">
+    <view wx:for="{{articleList}}" wx:key="list" wx:for-item="article" class="v_item"  style="margin-bottom:{{index == articleList.length-1?32:0}}rpx;"  data-link='{{article.link}}' bindtap="clickDetail">
+      <view class="v_item_title">{{article.title}}</view>
+      <view class="v_author_time">
+        <view wx:if="{{article.author.length != 0}}" style="font-size: 28rpx; color: #888888;">{{article.niceDate}}  作者：{{article.author}}</view>
+        <view wx:else style="font-size: 28rpx; color: #888888;">{{article.niceDate}}  作者：暂无</view>
+        <!-- <image src="../../images/iv_like.png" style="width:60rpx;height:60rpx;"></image> -->
+      </view>
+    </view>
+  </scroll-view>
+</view>

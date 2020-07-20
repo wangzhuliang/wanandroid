@@ -1,0 +1,34 @@
+/* pages/moudleA/pages/project/project.wxss */
+.v_list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f5f5f5;
+}
+
+/**图像的左侧和右侧均不允许出现浮动元素：*/
+.content {
+  clear: both;
+  width: 750rpx;
+}
+
+.content .left {
+  float: left;
+  width: 49%;
+}
+
+.content .right {
+  float: right;
+  width: 49%;
+}
+
+.item {
+  margin-top: 20rpx;
+  width: 100%;
+  line-height: 0;
+}
+
+.item-img {
+  width: 100%;
+}

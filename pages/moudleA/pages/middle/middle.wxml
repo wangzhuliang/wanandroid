@@ -1,0 +1,40 @@
+<!--pages/moudleA//pages/middle/middle.wxml-->
+<!-- home="{{true}}" -->
+<navBar title='展示' back="{{true}}" bindback="gobackClick"></navBar>
+
+<view class="card" style="position: absolute; left:{{left}}rpx; top:{{topDistance}}px; margin-top:{{top}}rpx; z-index:{{indexThree}};"id="cardThree" bindtouchstart="bindtouchstart" bindtouchmove="bindtouchmove" bindtouchend="bindtouchend" catchtap="toPattern">
+  <!-- <view>{{numberThree%5+1}}</view>
+  <view>{{nameThree}}</view> -->
+  <image src="{{imageThree}}" class="iv_card"></image>
+</view>
+
+<view class="card" style="position: absolute; left:{{left}}rpx; top:{{topDistance}}px; margin-top:{{top}}rpx; z-index:{{indexTwo}};"id="cardTwo" bindtouchstart="bindtouchstart" bindtouchmove="bindtouchmove" bindtouchend="bindtouchend" catchtap="toPattern">
+  <!-- <view>{{numberTwo%5+1}}</view>
+  <view>{{nameTwo}}</view> -->
+  <image src="{{imageTwo}}" class="iv_card"></image>
+</view>
+
+<view class="card" style="position: absolute; left:{{left}}rpx; top:{{topDistance}}px; margin-top:{{top}}rpx; z-index:{{indexOne}};"id="cardOne" bindtouchstart="bindtouchstart" bindtouchmove="bindtouchmove" bindtouchend="bindtouchend" catchtap="toPattern">
+  <!-- <view>{{numberOne%5+1}}</view>
+  <view>{{nameOne}}</view> -->
+  <image src="{{imageOne}}" class="iv_card"></image>
+</view>
+
+<view class="v_all">
+  <view class="v_item">
+    <view class="v_button" bindtap="circulationMode">循环模式(默认)</view>
+    <view class="v_button" bindtap="decreaseMode">递减模式</view>
+  </view>
+  <view class="v_item">
+    <view class="v_button" bindtap="previousPage">上一页</view>
+    <view class="v_button" bindtap="reset">重置</view>
+  </view>
+</view>
+
+
+
+
+
+
+
+

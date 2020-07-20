@@ -1,0 +1,28 @@
+/* pages/moudleB//pages/register/register.wxss */
+.v_login{
+  margin-top: 30%;
+}
+
+.text_input {
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  width: 630rpx;
+  height: 100rpx;
+  font-size: 32rpx;
+  color: #333333;
+  border-bottom: 1rpx solid #EBA356;
+}
+
+.login_btn {
+  margin-top: 60rpx;
+  margin-left: 60rpx;
+  text-align: center;
+  width: 630rpx;
+  line-height: 100rpx;
+  background-color: #EBA356;
+  border-radius: 50rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+  display: inline-block;
+}
+

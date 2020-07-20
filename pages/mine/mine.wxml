@@ -1,0 +1,59 @@
+<!--pages/mine/mine.wxml-->
+<view class="container" style="bottom:{{isIphoneX?'164rpx':'98rpx'}};">
+  <navBar title='我的'/>
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+  <!-- <canvas class="imageCanvasA" id="imageCanvas" type="2d"  style="width:750rpx;"></canvas>
+  <view bindtap="start" >开始动</view> -->
+  <view class="v_account">
+    <view class="v_login" bindtap="loginOrRegister">
+      <image src="../../images/businesscard.png" class="iv_businesscard" ></image>
+      <view wx:if="{{userName.length == 0}}">登录/注册</view>
+      <view wx:if="{{userName.length != 0}}">{{userName}}</view>
+    </view>
+  </view>
+
+  <view class="v_item" bindtap="collect">
+    <image src="../../images/like_list.png" class="iv_item"></image>
+    <view>我的收藏</view>
+  </view>
+
+  <view class="v_line"></view>
+
+  <view class="v_item" bindtap="widget">
+    <image src="../../images/tools.png" class="iv_item"></image>
+    <view>自定义控件</view>
+  </view>
+
+  <view class="v_line"></view>
+
+   <view class="v_item" bindtap="girls">
+    <image src="../../images/praise.png" class="iv_item"></image>
+    <view>图片欣赏</view>
+  </view>
+
+  <view class="v_line"></view>
+
+  <view class="v_item" bindtap="welfare">
+    <image src="../../images/redpacket.png" class="iv_item"></image>
+    <view>照片书</view>
+  </view>
+
+  <view class="v_line"></view>
+
+  <view class="v_item" bindtap="aboutUs">
+    <image src="../../images/group.png" class="iv_item"></image>
+    <view>关于开发</view>
+  </view>
+
+  <view class="v_line"></view>
+
+  <view class="v_item" bindtap="goOut">
+    <image src="../../images/shielding.png" class="iv_item"></image>
+    <view>退出登录</view>
+  </view>
+
+  <view class="v_line"></view>
+
+</view>
+
+

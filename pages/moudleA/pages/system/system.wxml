@@ -1,0 +1,13 @@
+<!--pages/moudleA/pages/system/system.wxml-->
+<navBar title='体系' back="{{true}}" home="{{true}}" bindback="gobackClick" bindhome="goHome"></navBar>
+
+<scroll-view class="v_list" style="top:{{topDistance}}px;" scroll-y="true">
+  <view wx:for="{{systemData}}" wx:key="system" class="v_all" style="margin-bottom:{{index == systemData.length-1?32:0}}rpx;" bindtap="toSystemItem" data-itemdata="{{item}}" wx:if="{{systemData[index].children.length != 0}}">
+    <view class="v_title">{{item.name}}</view>
+    <view class="v_item_all">
+      <view wx:for="{{item.children}}" wx:key="children" wx:for-item="littleTitle" class="v_item">
+        <view class="v_item_title">{{littleTitle.name}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

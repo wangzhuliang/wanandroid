@@ -1,0 +1,30 @@
+<!--pages/moudleA/pages/search/search.wxml-->
+<navBar title='热搜' back="{{true}}" home="{{true}}" bindback="gobackClick" bindhome="goHome"></navBar>
+<scroll-view scroll-y="true" bindscrolltolower="bindscrolltolower" class="v_list" style="top:{{topDistance}}px;" scroll-top="{{top}}">
+
+  <view class='hot_title'>大家都在搜</view>
+  <view class="v_hot_title_list">
+    <view wx:for="{{hotList}}" wx:key="hot" class="hot_item">
+      <view class="v_item_title" bindtap="toSearchTitle" data-title="{{item.name}}">{{item.name}}</view>
+    </view>
+  </view> 
+
+  <view class="sticky">
+    <view class="page__bd">
+      <mp-searchbar bindselectresult="selectResult" search="{{search}}" bindblur="bindblur" bindfocus="bindfocus"></mp-searchbar>
+    </view>
+  </view>
+
+
+  
+
+  <view wx:for="{{searchList}}" wx:key="itemnPath" class="v_item"  style="margin-bottom:{{index == searchList.length-1?32:0}}rpx;"  data-link='{{item.link}}' bindtap="clickDetail">
+    <view class="v_item_title">{{item.title}}</view>
+    <view class="v_author_time">
+      <view wx:if="{{item.author.length != 0}}" style="font-size: 28rpx; color: #888888;">{{item.niceDate}}  作者：{{item.author}}</view>
+      <view wx:else style="font-size: 28rpx; color: #888888;">{{item.niceDate}}  作者：暂无</view>
+      <!-- <image src="../../images/iv_like.png" style="width:60rpx;height:60rpx;"></image> -->
+    </view>
+  </view>
+
+</scroll-view>

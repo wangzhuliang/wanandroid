@@ -1,0 +1,22 @@
+<!--pages/moudleA/pages/projectItem/projectItem.wxml-->
+<navBar title='{{getSort.sub(projectDetails)}}' back="{{true}}" home="{{true}}" bindback="gobackClick" bindhome="goHome"></navBar>
+<scroll-view class="v_all" style="top:{{topDistance}}px;" scroll-y="true">
+  <view class="v_title">{{projectDetails.title}}</view>
+  <view class="v_message_all">
+    <image class="iv_message" src="{{projectDetails.envelopePic}}" mode="widthFix"></image>
+    <view class="v_message">
+      <view class="v_text">作者：{{projectDetails.author}}</view>
+      <view class="v_text">发布时间：{{projectDetails.niceDate}}</view>
+      <view class="v_text">github地址：{{projectDetails.projectLink}}</view>
+    </view>
+  </view>
+  <view class="v_introduce">应用介绍：{{projectDetails.desc}}</view>
+</scroll-view>
+
+<!-- 获取类别 -->
+<wxs module="getSort">
+  var sub = function(sort) {
+    return sort.chapterName
+  }
+  module.exports.sub = sub;
+</wxs>

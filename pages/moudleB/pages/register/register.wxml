@@ -1,0 +1,8 @@
+<!--pages/moudleB//pages/register/register.wxml-->
+<navBar title='注册' back="{{true}}" home="{{true}}" bindback="gobackClick" bindhome="goHome"></navBar>
+<view class="v_login">
+  <input class="text_input" placeholder="请输入用户名" value="{{userName}}" bindinput='onNameChange'></input>
+  <input class='text_input' placeholder="请输入密码" value='{{userPassword}}' password="true" bindinput='onPwdChange'></input>
+  <input class='text_input' placeholder="请确认密码" value='{{userRepassword}}' password="true" bindinput='onRePwdChange'></input>
+  <view class='login_btn' bindtap='register'>注册</view>
+</view>

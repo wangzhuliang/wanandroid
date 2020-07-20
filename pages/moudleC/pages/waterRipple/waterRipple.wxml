@@ -1,0 +1,8 @@
+<!--pages/moudleC/pages/waterRipple/waterRipple.wxml-->
+<navBar title='触摸水波涟漪' back="{{true}}" bindback="gobackClick"></navBar>
+<view class="ripple" style="{{rippleStyle1}}"></view>
+<view class="ripple" style="{{rippleStyle2}}"></view>
+<view class="ripple" style="{{rippleStyle3}}"></view>
+<view class="ripple" style="{{rippleStyle4}}"></view>
+<view class="ripple" style="{{rippleStyle5}}"></view>
+<view class="container" bindtouchstart="containerTap"></view>

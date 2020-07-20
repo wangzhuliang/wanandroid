@@ -1,0 +1,25 @@
+<!--pages/moudleC/pages/wordsRun/wordsRun.wxml-->
+<navBar title='文字跑马灯' back="{{true}}" bindback="gobackClick"></navBar>
+
+<view class="v_title">效果一：显示完后再次显示</view>
+<view class="example">
+  <view class="scroll_box">
+    <view class="scroll_text" style="{{orientation}}:{{scrollDistance}}px;">
+      {{text}}
+    </view>
+  </view>
+</view>
+
+<view class="v_title">效果二：尾部一段距离后显示</view>
+<view class="example">
+  <view class="scroll_box">
+    <view class="scroll_text" style="{{orientation}}:{{scrollDistance2}}px;">
+      <text>{{text}}</text>
+      <text wx:if="{{scroll2copy_status}}" style="margin-left:{{scroll2_margin}}px;">{{text}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+

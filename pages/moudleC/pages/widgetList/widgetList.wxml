@@ -1,0 +1,10 @@
+<!--pages/moudleC//pages/widgetList/widgetList.wxml-->
+<navBar title='自定义控件' back="{{true}}" bindback="gobackClick"></navBar>
+<scroll-view class="v_list" style="top:{{topDistance}}px;" scroll-y="true">
+
+  <block wx:for="{{widgetList}}" wx:key="widgetList">
+      <view class="v_name" bindtap="itemClick" data-index="{{index}}">{{item}}</view>
+      <view class="v_line"></view>
+  </block>
+
+</scroll-view>

@@ -1,0 +1,36 @@
+/* pages/moudleB//pages/login/login.wxss */
+.v_login {
+  margin-top: 30%;
+}
+
+.text_input {
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  width: 630rpx;
+  height: 100rpx;
+  font-size: 32rpx;
+  color: #333333;
+  border-bottom: 1rpx solid #EBA356;
+}
+
+.text_register {
+  text-decoration: underline;
+  text-align: right;
+  width: 690rpx;
+  margin-top: 20rpx;
+  color: #666666;
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+}
+
+.login_btn {
+  margin-left: 60rpx;
+  text-align: center;
+  width: 630rpx;
+  line-height: 100rpx;
+  background-color: #EBA356;
+  border-radius: 50rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+  display: inline-block;
+}

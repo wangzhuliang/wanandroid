@@ -1,0 +1,4 @@
+<!--pages/moudleC/pages/clock/clock.wxml-->
+<navBar title='时钟效果' back="{{true}}" bindback="gobackClick"></navBar>
+<canvas type="2d" id="clockOne" class="clockOne"></canvas>
+<canvas type="2d" id="clockTwo" class="clockTwo"></canvas>

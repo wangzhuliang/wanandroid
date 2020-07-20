@@ -1,0 +1,13 @@
+<!--components/zoomImageView/zoomImageView.wxml-->
+<!-- <view style="width:{{view_width}}px;height:{{view_height}}px;overflow: hidden; position: relative;"> -->
+<view style="width:100%;height:100%;overflow: hidden; position: relative;">
+  <image
+    style="width:{{imgWidth}}rpx;height:{{imgHeight}}rpx;margin-top:{{marginTop}}rpx;margin-left:{{marginLeft}}rpx;"
+    src="{{img_src}}"
+    mode="aspectFit"
+    catchload="imgLoad"
+    catchtouchstart="touchStart"
+    catchtouchmove="touchMove"
+    catchtouchend="touchEnd"
+    catchtouchcancel="touchEnd" />
+</view>

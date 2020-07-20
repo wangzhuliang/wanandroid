@@ -1,0 +1,32 @@
+<!--pages/moudleB/pages/collect/collect.wxml-->
+<navBar title='收藏' back="{{true}}" bindback="gobackClick"></navBar>
+<scroll-view class="v_list" style="top:{{topDistance}}px;" scroll-y="{{canScrolly}}" bindscrolltolower="bindscrolltolower" bindscroll="scrollymove">
+  
+  <view wx:for="{{collectData}}" wx:key="collect" wx:for-item="article" class="v_item"  style="margin-bottom:{{index == collectData.length-1?32:0}}rpx;"  data-link='{{article.link}}' bindtap="clickDetail">
+
+      <!-- <mp-slideview buttons="{{article.slideButtons}}" bindbuttontap="slideButtonTap">
+      <view class="v_all">
+        <view class="v_item_title">{{article.title}}</view>
+        <view class="v_author_time">
+          <view wx:if="{{article.author.length != 0}}" style="font-size: 28rpx; color: #888888;">{{article.niceDate}}  作者：{{article.author}}</view>
+          <view wx:else style="font-size: 28rpx; color: #888888;">{{article.niceDate}}  作者：暂无</view>
+        </view>
+      </view>
+      </mp-slideview> -->
+      <view class="items">
+        <view class="item">
+          <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{article.txtStyle}}" class="inner txt">
+            <view class="v_item_title">{{article.title}}</view>
+            <view class="v_author_time">
+              <view wx:if="{{article.author.length != 0}}" style="font-size: 28rpx; color: #888888;">{{article.niceDate}}  作者：{{article.author}}</view>
+              <view wx:else style="font-size: 28rpx; color: #888888;">{{article.niceDate}}  作者：暂无</view>
+            </view>
+          </view>
+          <view data-id="{{article.originId}}" data-index="{{index}}" catchtap="delItem" class="inner del">删除</view>
+        </view>
+      </view>
+
+  </view>
+  
+</scroll-view>
+

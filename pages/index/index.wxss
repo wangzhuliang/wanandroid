@@ -1,0 +1,150 @@
+/**index.wxss**/
+page {
+  background-color: #f5f5f5;
+}
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.iv_image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.v_title {
+  margin-top: -30rpx;
+  left: 20rpx;
+  position: absolute;
+  z-index:5001;
+  width: 692rpx;
+  height: 210rpx;
+}
+
+.iv_title {
+  width: 692rpx;
+  height: 210rpx;
+}
+
+.v_title_text {
+  width: 600rpx;
+  position: absolute;
+  top: 78rpx;
+  left: 54rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+}
+
+.v_list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.home-swiper{
+  width: 100%;
+  height: 440rpx;
+  background-color: #f5f5f5;
+}
+
+.home-swiper .swiper-item{
+  display: flex;
+  justify-content: center;
+}
+
+.home-swiper .swiper-item .v_Group{
+  width: 100%;
+  height: 440rpx;
+}
+
+.home-swiper .swiper-item .v_Group.on .flipBox{ 
+  transform:rotateY(180deg); 
+}  
+
+.active{
+  transform: scale(1.04);
+  transition:all .2s ease-in 0s;
+}
+
+.flipBox{ width:100%; height:100%;  transition: all 1s ease; transform-style: preserve-3d; }
+
+.sideWrap{ width:100%; height:100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; }
+.sideWrap.front{ backface-visibility:hidden;}
+.sideWrap.back{ backface-visibility: hidden; transform:rotateY(180deg);}
+
+.home-swiper .swiper-item .home-image{
+  display: flex;
+  justify-content: center;
+  width: 590rpx;
+  height: 400rpx;
+  margin: 20rpx;
+}
+
+.v_content {
+  width: 590rpx;
+  height: 400rpx;
+  margin: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBA356
+}
+
+.v_content .v_item_title {
+  color: #ffffff;
+  font-size: 40rpx;
+}
+
+.v_content .v_item_in {
+  margin-top: 100rpx;
+  padding: 20rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+}
+
+.v_item {
+  width: 100%;
+  height: 300rpx;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.v_item .v_item_title {
+  margin-top: 40rpx;
+  font-size: 36rpx;
+  color: #333333;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-weight: 600;
+}
+
+.v_item .v_author_time {
+  margin-bottom: 20rpx;
+  margin-right: 30rpx;
+  margin-left: 26rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.v_item .v_author_time .v_athor_time_item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.v_line {
+  width: 100%;
+  height: 2rpx;
+  background-color: #F5F5F5;
+}

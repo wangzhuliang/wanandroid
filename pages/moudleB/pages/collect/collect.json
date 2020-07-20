@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "navBar": "/components/navBar/navBar",
+    "mp-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview"
+  },
+  "disableScroll": true
+}

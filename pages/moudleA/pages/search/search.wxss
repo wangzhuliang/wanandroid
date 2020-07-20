@@ -1,0 +1,74 @@
+/* pages/moudleA/pages/search/search.wxss */
+.v_list{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.hot_title {
+  padding: 14rpx;
+  font-size: 32rpx;
+  background-color: #fff;
+  color: #EBA356;
+}
+
+.v_hot_title_list {
+  margin-left: 14rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 32rpx;
+  background-color: #f5f5f5;
+}
+
+.hot_item {
+  margin-top: 32rpx;
+  margin-right: 32rpx;
+}
+
+.v_item_title {
+  font-size: 28rpx;
+  color: #666666;
+}
+
+.sticky {
+  position: sticky;/* 这个是吸顶粘附关键属性 */
+  top: 0;
+  z-index: 666;
+}
+
+.v_item {
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  margin-top: 32rpx;
+  height: 300rpx;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 2px 8px #aaa;
+  border-radius: 10rpx;
+}
+
+.v_item .v_item_title {
+  margin-top: 40rpx;
+  font-size: 36rpx;
+  color: #333333;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-weight: 600;
+}
+
+.v_item .v_author_time {
+  margin-bottom: 20rpx;
+  margin-right: 30rpx;
+  margin-left: 26rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 。。。。。。。。。。。。。。。。。。。。。。。。。。 */

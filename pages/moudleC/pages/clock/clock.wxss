@@ -1,0 +1,13 @@
+/* pages/moudleC/pages/clock/clock.wxss */
+.clockOne{
+  width: 750rpx;
+  height: 500rpx;
+  border: 1px solid #EBA356;
+}
+
+.clockTwo{
+  margin-top: 40rpx;
+  width: 750rpx;
+  height: 500rpx;
+  border: 1px solid #EBA356;
+}

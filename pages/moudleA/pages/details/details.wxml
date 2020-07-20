@@ -1,0 +1,16 @@
+<!--pages/moudleA/pages/details/details.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+<navBar title='详情' back="{{true}}" bindback="gobackClick"></navBar>
+<!-- home="{{true}}" -->
+<view wx:if="{{isShow}}" style="position: absolute;top:{{topDistance}}px; bottom:0; left:0; right:0;">
+  <template is="wxParse" data="{{wxParseData:details.nodes}}" />
+</view>
+<view class="v_title" wx:if="{{isCopy}}" style="top:{{topDistance}}px;" animation="{{vanish}}">
+  <image class="iv_title" src="/images/iv_first_title.png" ></image>
+  <view class="v_title_text">网址已经自动复制，到浏览器粘贴可查看更全面的内容哦~</view>
+</view>
+<view wx:if="{{!isShow}}" style="position: absolute;top:{{topDistance}}px; bottom:0; left:0; right:0;">
+  <image src="../../imgs/iv_none.png" class="iv_none"></image>
+  <view class="v_text">无法打开此链接，请点击复制按钮到浏览器可见</view>
+  <view class="v_copy" bindtap="toCopy">复制</view>
+</view>

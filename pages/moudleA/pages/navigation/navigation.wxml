@@ -1,0 +1,15 @@
+<!--pages/moudleA/pages/navigation/navigation.wxml-->
+<navBar title='导航' back="{{true}}" home="{{true}}" bindback="gobackClick" bindhome="goHome"></navBar>
+<scroll-view class="sv_left" style="top:{{topDistance}}px;" scroll-y="true">
+  <view class="v_left_title" wx:for="{{leftList}}" wx:key="left">
+    <view class="v_title" style="color:{{showIndex == index? '#EBA356':'#999999'}};background-color: {{showIndex == index? '#ffffff':'#f5f5f5'}};" bindtap="choiceTitle" data-index="{{index}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+<scroll-view class="sv_right" style="top:{{topDistance}}px;" scroll-y="true" scroll-top="{{rightTop}}" >
+  <view class="v_item_all">
+    <view class="v_item" wx:for="{{rightList}}" wx:key="right">
+      <view class="v_item_name" bindtap="toShowDetail" data-link="{{item.link}}">{{item.title}}</view>
+    </view>
+  </view>
+</scroll-view>
+

@@ -1,0 +1,8 @@
+ <!--pages/moudleB//pages/login/login.wxml-->
+<navBar title='登录' back="{{true}}" bindback="gobackClick"></navBar>
+<view class="v_login">
+  <input class="text_input" placeholder="请输入用户名" value="{{userName}}" bindinput='onNameChange'></input>
+  <input class='text_input' placeholder="请输入密码" value='{{userPassword}}' password="true" bindinput='onPwdChange'></input>
+  <view class='text_register' bindtap='registerClick'>去注册</view>
+  <view class='login_btn' bindtap='login'>登录</view>
+</view>

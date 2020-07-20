@@ -1,0 +1,37 @@
+/* pages/moudleC/pages/wordsRun/wordsRun.wxss */
+
+.v_title {
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #333333;
+}
+
+.example {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #EBA356;
+}
+
+.scroll_box {
+  width: 100%;
+  position: relative;
+}
+
+.scroll_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  font-size: 28rpx;
+}
+
+.marquee_box {
+  width: 100%;
+  position: relative;
+}
+
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+}

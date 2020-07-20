@@ -1,0 +1,33 @@
+<!--pages/moudleB/pages/about/about.wxml-->
+<navBar title='照片书' back="{{true}}" bindback="gobackClick"></navBar>
+
+<scroll-view class="v_list" style="top:{{topDistance}}px;" scroll-y="true">
+    <view class='container'>
+    <view class='page_first'></view>
+    <view class='page_last'>
+        <block wx:for='{{imgArr}}' wx:key='index'>
+            <view class="photo_item {{item.isturn?'left':'right'}} {{'zindex'+item.zIndex}}" data-index='{{index}}' bindtap='change'>
+                <image src='{{item.src}}' mode='aspectFill' class="iv_top"></image>
+                <image src='{{item.srca}}' mode='aspectFill' class="iv_bottom"></image>
+            </view>
+        </block>
+    </view>
+</view>
+
+<!-- <view class='container'>
+    <view class='page_first'></view>
+    <view class='page_last'>
+        <block wx:for='{{imgArr1}}' wx:key='index'>
+            <view class="photo_item {{item.isturn?'left':'right'}} {{'zindex'+item.zIndex}}" data-index='{{index}}' bindtap='changeA'>
+                <image src='{{item.src}}' mode='aspectFill' class="iv_top"></image>
+                <image src='{{item.srca}}' mode='aspectFill' class="iv_bottom"></image>
+            </view>
+        </block>
+    </view>
+</view> -->
+
+
+
+
+
+</scroll-view>

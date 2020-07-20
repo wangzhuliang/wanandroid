@@ -1,0 +1,102 @@
+/* pages/moudleB/pages/about/about.wxss */
+.container{
+    margin-top: 40rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page_first,.page_last{
+    width: 50%;
+    height: 480rpx;
+}
+.page_first{
+    display:flex;
+    box-sizing:border-box;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+.page_last{
+    position:relative;
+}
+.photo_item{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    box-sizing:border-box;
+    border:1rpx solid #eee;
+}
+image{
+    width:100%;
+    height:100%;
+}
+.left,.right{
+    transform-style:preserve-3d; /* 开启3d转换效果 */
+    transform-origin:0% center;  /* 设置基点位置 */
+    perspective:1000px;  /* 定义3D元素距视图的距离 */
+    transition:all 1.5s ease-in-out;
+}
+.left{
+    transform:perspective(1000px) rotateY(-180deg);
+}
+.right{
+    transform:perspective(1000px) rotateY(0deg);
+}
+.zindex1{
+    z-index:1;
+}
+.zindex2{
+    z-index:2;
+}
+.zindex3{
+    z-index:3;
+}
+
+.zindex4{
+    z-index:4;
+}
+
+.iv_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backface-visibility:hidden;
+}
+
+.iv_bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backface-visibility: hidden; 
+  transform:rotateY(180deg);
+}
+
+.v_come {
+    width: 400rpx;
+    height: 400rpx;
+    flex-shrink: 0;
+}
+
+.v_list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .v_img {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .v_img {
+      margin-top: 20rpx;
+      margin-right: 20rpx;
+  }

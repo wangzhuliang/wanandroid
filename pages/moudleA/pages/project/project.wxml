@@ -1,0 +1,25 @@
+<!--pages/moudleA/pages/project/project.wxml-->
+<navBar title='项目' back="{{true}}" home="{{true}}" bindback="gobackClick" bindhome="goHome"></navBar>
+<scroll-view class="v_list" style="top:{{topDistance}}px;" scroll-y="true" bindscrolltolower="bindscrolltolower">
+  <view class="content">
+    <view class="left">
+      <view wx:for="{{projectList}}" wx:key="projectList">
+        <template is="template" wx:if="{{index%2 == 0}}" data="{{object : item}}"></template>
+      </view>
+    </view>
+    <view class="right">
+      <view wx:for="{{projectList}}" wx:key="projectList">
+        <template is="template" wx:if="{{index%2 == 1}}" data="{{object : item}}"></template>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 使用name属性，作为模板的名字 -->
+<template name="template">
+  <!-- 显示内容 -->
+  <view class="item" bindtap="toDetails" data-details="{{object}}">
+    <image class="item-img" mode="widthFix" src="{{object.envelopePic}}"></image>
+  </view>
+  
+</template>

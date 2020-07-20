@@ -1,0 +1,57 @@
+/* pages/moudleA/pages/details/details.wxss */
+@import "../../wxParse/wxParse.wxss";
+
+.v_title {
+  margin-top: -30rpx;
+  left: 20rpx;
+  position: absolute;
+  z-index:5001;
+  width: 692rpx;
+  height: 210rpx;
+}
+
+.iv_title {
+  width: 692rpx;
+  height: 210rpx;
+}
+
+.v_title_text {
+  width: 600rpx;
+  position: absolute;
+  top: 78rpx;
+  left: 54rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+}
+
+.iv_none {
+  margin-top: 135rpx;
+  margin-left: 135rpx;
+  width: 450rpx;
+  height: 360rpx;
+}
+
+.v_text {
+  margin-top: 100rpx;
+  color: #333333;
+  font-size: 32rpx;
+  width: 750rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+.v_copy {
+  position: absolute;
+  bottom: 100rpx;
+  width: 300rpx;
+  left: 225rpx;
+  background-color: #EBA356;
+  color: #ffffff;
+  border-radius: 200rpx;
+  font-size: 34rpx;
+  display: block;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}

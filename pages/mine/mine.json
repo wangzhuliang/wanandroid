@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "navBar": "/components/navBar/navBar"
+  },
+  "disableScroll": true
+}

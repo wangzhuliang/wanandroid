@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/index/index",
+    "pages/mine/mine"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/moudleA/",
+      "pages": [
+        "pages/middle/middle",
+        "pages/details/details",
+        "pages/system/system",
+        "pages/search/search",
+        "pages/project/project",
+        "pages/navigation/navigation",
+        "pages/systemItem/systemItem",
+        "pages/projectItem/projectItem"
+      ]
+    },
+    {
+      "root": "pages/moudleB/",
+      "pages": [
+        "pages/login/login",
+        "pages/register/register",
+        "pages/collect/collect",
+        "pages/about/about",
+        "pages/girls/girls",
+        "pages/grilsDetail/grilsDetail"
+      ]
+    },
+    {
+      "root": "pages/moudleC/",
+      "pages": [
+        "pages/widgetList/widgetList",
+        "pages/wordsRun/wordsRun",
+        "pages/waterRipple/waterRipple",
+        "pages/figures/figures",
+        "pages/clock/clock"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EBA356",
+    "navigationBarTitleText": "自定义导航栏",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "custom": true,
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#1c1c1b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "tabbarComponent/icon/homepage.png",
+        "selectedIconPath": "tabbarComponent/icon/homepage_fill.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "tabbarComponent/icon/people.png",
+        "selectedIconPath": "tabbarComponent/icon/people_fill.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

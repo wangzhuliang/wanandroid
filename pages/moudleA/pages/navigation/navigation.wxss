@@ -1,0 +1,49 @@
+/* pages/moudleA/pages/navigation/navigation.wxss */
+.sv_left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 230rpx;
+}
+
+.v_left_title {
+  width: 100%;
+  height: 100rpx;
+}
+
+.v_left_title .v_title {
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.sv_right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 230rpx;
+  right: 0;
+  width: 520rpx;
+}
+
+.v_item_all {
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 40rpx;
+}
+
+.v_item {
+  margin-top: 40rpx;
+  margin-right: 40rpx;
+}
+
+.v_item_name {
+  font-size: 28rpx;
+  color: #666666;
+}
+

@@ -1,0 +1,84 @@
+/* pages/moudleB/pages/collect/collect.wxss */
+.v_list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.v_item {
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  margin-top: 32rpx;
+  height: 300rpx;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 2px 8px #aaa;
+  border-radius: 10rpx;
+}
+
+.v_item_title {
+  margin-top: 40rpx;
+  font-size: 36rpx;
+  color: #333333;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-weight: 600;
+}
+
+.v_author_time {
+  margin-bottom: 20rpx;
+  margin-right: 30rpx;
+  margin-left: 26rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.v_all {
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.items{
+  width: 100%;
+}
+
+.item{
+  position: relative;
+  height: 300rpx;
+  overflow: hidden;
+  margin:auto 20rpx;
+}
+
+.inner{
+  position: absolute;
+  top:0;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inner.txt{
+  font-family: Monaco;
+  width:100%;
+  z-index: 5;
+  transition: left 0.2s ease-in-out;
+  background:#fff;
+}
+
+.inner.del{
+  font-family: Monaco;
+  width: 180rpx;
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  right: 0;
+  color: #fff;
+  background:#FF595D;
+}

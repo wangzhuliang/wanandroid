@@ -1,0 +1,18 @@
+/* pages/moudleB/pages/grilsDetail/grilsDetail.wxss */
+.whiteboard-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.v_save{
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}

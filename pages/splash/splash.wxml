@@ -1,0 +1,5 @@
+<!--pages/splash/splash.wxml-->
+<image class="iv_background" src="../../images/splash.png" ></image>
+<text class="tv_time" style="top:{{topDistance}}px;">{{countDownNum}}</text>
+<view class="start" bindtap="startHome">立即体验</view>
+

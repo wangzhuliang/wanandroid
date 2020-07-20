@@ -1,0 +1,22 @@
+/* pages/moudleC//pages/widgetList/widgetList.wxss */
+.v_list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.v_name {
+  margin-left: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.v_line {
+  background-color: #f6f6f6;
+  width: 710rpx;
+  margin-left: 20rpx;
+  height: 2rpx;
+}

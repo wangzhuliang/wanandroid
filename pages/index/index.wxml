@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container" style="bottom:{{isIphoneX?'164rpx':'98rpx'}};">
+  <navBar title='首页'/>
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+  <view class="v_title" wx:if="{{isFirst}}" style="top:{{topDistance}}px;" animation="{{vanish}}">
+    <image class="iv_title" src="/images/iv_first_title.png" ></image>
+    <view class="v_title_text">点击“添加到我的小程序”后，微信首页下拉即可查看</view>
+  </view>
+
+  <image class="iv_image" style="top:{{topDistance}}px; height:{{imageHeight}}rpx" src="https://ae01.alicdn.com/kf/U342d19a853e44274918a64c53b64c3a0j.jpg" hidden="{{isShow}}"></image>
+
+  <scroll-view class="v_list" style="top:{{topDistance}}px;" scroll-y="true" bindscroll="bindScroll" 
+  bindscrolltolower="bindscrolltolower" bindscrolltoupper="refresh">
+
+     <!-- duration="{{duration}}" circular="true"
+    indicator-color="#666666"  
+    indicator-dots="true" autoplay="true" 
+    interval="{{interval}}" indicator-active-color="#FF6B6B" -->
+
+    <swiper class="home-swiper"
+    circular="true"
+    previous-margin="60rpx" next-margin="60rpx" 
+    bindchange="swiperChange"
+    current="0">
+      <block wx:for="{{bannerData}}" wx:key="imagePath" wx:for-index="index">
+        <swiper-item class="swiper-item">
+        <!--  -->
+          <view class="v_Group  {{ item.isOpenFilp ? 'on':''}} {{swiperIndex == index ? 'active' : ''}}"  data-index='{{index}}' bindtap='switchFlip'>
+            <view class="flipBox" >
+              <!-- 正面内容 -->
+              <view class='sideWrap front' >
+                <image class="home-image" src="{{item.imagePath}}"/>
+              </view>
+              <!-- 背面内容 -->
+              <view class="sideWrap back" >
+                <view class="v_content">
+                    <view class="v_item_title">{{item.title}}</view>
+                    <view class="v_item_in" catchtap="toDetails" data-link="{{item.url}}">点击查看详情</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    
+    <view wx:for="{{homeData}}" wx:key="itemnPath" wx:for-index = "index" class="item item-{{index}}">
+      <view class="v_item" data-link="{{item.link}}" catchtap="toDetails">
+        <view class="v_item_title">{{item.title}}</view>
+        <view class="v_author_time">
+          <!-- <view class="v_athor_time_item">
+            <view style="font-size: 28rpx; color: #333333;">{{item.niceDate}}</view>
+            <view wx:if="{{item.author.length != 0}}" style="font-size: 28rpx; color: #333333;">作者：{{item.author}}</view>
+            <view wx:else style="font-size: 28rpx; color: #333333;">作者：暂无</view>
+          </view> -->
+          <view wx:if="{{item.author.length != 0}}" style="font-size: 28rpx; color: #888888;">{{item.niceDate}}  作者：{{item.author}}</view>
+          <view wx:else style="font-size: 28rpx; color: #888888;">{{item.niceDate}}  作者：暂无</view>
+          <image wx:if="{{!item.collect}}" src="../../images/iv_like.png" style="width:60rpx;height:60rpx;" data-collect="{{item.collect}}" data-id="{{item.id}}" data-index='{{index}}' catchtap="onCollect"></image>
+          <image wx:if="{{item.collect}}" src="../../images/iv_like_fill.png" style="width:60rpx;height:60rpx;" data-collect="{{item.collect}}" data-id="{{item.id}}" data-index='{{index}}' catchtap="onCollect"></image>
+        </view>
+      </view>
+      <view class="v_line"></view>
+      <canvas class="imageCanvasA" id="imageCanvas" type="2d"  wx:if="{{index == 4}}" style="width:750rpx;opacity:{{isOpacity}};"></canvas>
+      <view class="v_line" wx:if="{{index == 4}}"></view>
+      <!-- <canvas style="width:750rpx;height:300rpx;" canvas-id="imageCanvasOld" wx:if="{{index == 5}}"></canvas> -->
+      <!-- <scrollimage id="scrollImageOld" wx:if="{{index == 5}}" heightNumber="{{heightNumber}}"></scrollimage> -->
+    </view>
+
+  </scroll-view>
+  
+</view>

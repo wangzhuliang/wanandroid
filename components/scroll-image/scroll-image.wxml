@@ -1,0 +1,2 @@
+<!--components/scroll-image/scroll-image.wxml-->
+<canvas style="width:750rpx;height:300rpx;" canvas-id="imageCanvas" ></canvas>

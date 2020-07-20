@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "navBar": "/components/navBar/navBar",
+    "zoomImageView": "/components/zoomImageView/zoomImageView"
+  },
+  "disableScroll": true
+}
