@@ -14,7 +14,11 @@
 以及干货的妹纸图
 
 小程序已经审核通过,扫下方二维码即可使用
-<img src="./projectImage/gh_3e301d54a78f_344.jpg" width="300"/>
+<img src="./projectImage/gh_3e301d54a78f_344.jpg" width="100"/>
+
+其次我在公众号上把相对应的展示写了对应的文章
+<img src="./projectImage/aa.jpg" width="100"/>
+<img src="./projectImage/bbb.png" width="100"/>
 
 未来会一直更新新的功能，尽请期待
 
