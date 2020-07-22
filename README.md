@@ -18,10 +18,11 @@
 
 其次我在公众号上把相对应的展示写了对应的文章
 <img src="./projectImage/aa.jpg" width="100"/>
-<img src="./projectImage/bbb.png" width="100"/>
 
-未来会一直更新新的功能，尽请期待
+
+未来会一直更新新的功能，尽请期待  
 <img src="https://github.com/wangzhuliang/wanandroid/tree/wang/projectImage/0.jpg" width="300"/>
+<img src="./projectImage/bbb.PNG" width="300"/>
 <img src="./projectImage/0.jpg" width="300"/> <img src="./projectImage/1.jpg" width="300"/>
 <img src="./projectImage/2.jpg" width="300"/> <img src="./projectImage/3.jpg" width="300"/>
 <img src="./projectImage/4.jpg" width="300"/> <img src="./projectImage/5.jpg" width="300"/>
